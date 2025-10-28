@@ -37,7 +37,7 @@ int main() {
         for (int x = 0; x < ow; ++x)
             rotated_out.at<byte>(y, x) = rotated[y][x];
 
-    cv::imwrite("rotated_lena.jpg", rotated_out);
+    cv::imwrite("rotated_figure.jpg", rotated_out);
     std::cout << "旋转完成！输出分辨率: " << ow << " × " << oh << std::endl;
 
     // Mat 转二维 byte 数组
