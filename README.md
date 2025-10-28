@@ -5,7 +5,7 @@
 ## 项目结构
 
 ```
-DIP_VScode/
+DIP_Homework/
 ├── main.cpp              # 主程序入口，包含主函数
 ├── scaling.h            # 图像缩放功能的头文件
 ├── scaling.cpp          # 图像缩放功能的实现
@@ -29,8 +29,7 @@ DIP_VScode/
 ## 使用方法
 
 1. 准备输入图像：
-   - 将要处理的图像命名为 `lena.jpg`
-   - 放置在程序执行目录下
+
 
 2. 编译运行程序：
    - 使用 g++ 编译器
@@ -56,8 +55,9 @@ DIP_VScode/
 g++ main.cpp scaling.cpp rotating.cpp -o main -lopencv_core -lopencv_imgcodecs -lopencv_imgproc
 ```
 
-## 注意事项
+运行并查看结果
 
-1. 确保输入图像存在且格式正确
-2. 程序仅支持灰度图像处理
-3. 确保系统已正确安装 OpenCV 库
+```bash
+./main
+```
+
