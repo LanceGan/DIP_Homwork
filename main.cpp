@@ -22,7 +22,7 @@ int main() {
         for (int j = 0; j < img.cols; ++j)
             input[i][j] = img.at<byte>(i, j);
     
-    // 执行图像旋转
+    //-------------------------------------------------执行图像旋转
     int x0 = img.cols / 2;   // 输入图像旋转中心
     int y0 = img.rows / 2;
     int ow = 600;           // 输出图像宽
@@ -46,7 +46,7 @@ int main() {
         for (int j = 0; j < img_scaling.cols; ++j)
             input_scale[i][j] = img_scaling.at<byte>(i, j);
 
-    // 执行图像缩放，输出大小为640x640，使用灰色填充
+    //--------------------------------------------------- 执行图像缩放，输出大小为640x640，使用灰色填充
     const int TARGET_SIZE = 640;
     auto scaled = scale_image(input_scale, TARGET_SIZE, TARGET_SIZE, 128);
 
